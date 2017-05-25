@@ -47,6 +47,25 @@
                 <span asp-validation-for="Notes" class="text-danger"></span>
             </div>
         </div>
+
+
+        <div class="form-group">
+            <label asp-for="Location.Lat" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Location.Lat" class="form-control" />
+                <span asp-validation-for="Location.Lat" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Location.Lng" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Location.Lng" class="form-control" />
+                <span asp-validation-for="Location.Lng" class="text-danger"></span>
+            </div>
+        </div>
+
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />

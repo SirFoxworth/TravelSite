@@ -12,5 +12,7 @@ namespace TravelSite.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Notes { get; set; }
+        public Location Location { get; set; }
+        public List<Location> Route { get; set; }
     }
 }

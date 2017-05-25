@@ -15,7 +15,9 @@ namespace TravelSite.Controllers
 
         public TripController(TravelSiteContext context)
         {
-            _context = context;    
+            _context = context;
+
+            _context.Database.EnsureCreated();
         }
 
         // GET: Trip
@@ -85,7 +87,7 @@ namespace TravelSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,StartDate,EndDate,Notes")] Trip trip)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,StartDate,EndDate,Notes,Location.Lat,Location.Lng")] Trip trip)
         {
             if (id != trip.ID)
             {

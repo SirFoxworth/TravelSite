@@ -25,10 +25,10 @@ namespace TravelSite
         {
             services.AddMvc();
 
-            //services.AddDbContext<TravelSiteContext>(options =>
-            //        options.UseSqlServer(Configuration.GetConnectionString("TravelSiteContext")));
             services.AddDbContext<TravelSiteContext>(options =>
-                   options.UseInMemoryDatabase(Configuration.GetConnectionString("TravelSiteContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("TravelSiteContext")));
+            //services.AddDbContext<TravelSiteContext>(options =>
+            //       options.UseInMemoryDatabase(Configuration.GetConnectionString("TravelSiteContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
