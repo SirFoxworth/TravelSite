@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+	<RuntimeFrameworkVersion>2.0.0-preview1-002111-00</RuntimeFrameworkVersion>
     <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
     <UserSecretsId>aspnet-TravelSite-5FD6153F-1D16-4469-BBD2-D632C3293D9E</UserSecretsId>

@@ -17,7 +17,7 @@ namespace TravelSite.Controllers
         {
             _context = context;
 
-            _context.Database.EnsureCreated();
+            //_context.Database.EnsureCreated();
         }
 
         // GET: Trip
